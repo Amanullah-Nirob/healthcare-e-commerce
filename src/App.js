@@ -9,6 +9,10 @@ import Footer from './components/footer/Footer';
 import LoginOrRegister from './components/login/LoginOrRegister';
 import Context from './context/Context';
 import PrivateRoute from './priveteRoute/PrivateRoute';
+import About from './components/About/About';
+import Contact from './components/contact/Contact';
+import Simplelogin from './components/login/Simplelogin';
+import Blogs from './components/blogs/Blogs';
 
 function App() {
   return (
@@ -17,13 +21,26 @@ function App() {
 <BrowserRouter>
 <Header></Header>
 <Switch>
-
   <Route exact path='/'>
     <Home></Home>
   </Route>
 
   <Route path='/home'>
     <Home></Home>
+  </Route>
+
+  <Route path='/blog'>
+    <Blogs></Blogs>
+  </Route>
+  <Route path='/about'>
+   <About />
+  </Route>
+  <Route path='/contact'>
+<Contact></Contact>
+  </Route>
+  
+  <Route path='/simplelogin'>
+<Simplelogin></Simplelogin>
   </Route>
   
   <PrivateRoute path='/HomeService/:serviceId'>

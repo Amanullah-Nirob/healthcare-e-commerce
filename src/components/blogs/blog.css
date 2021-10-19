@@ -1,0 +1,36 @@
+.blog-background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background-attachment: fixed;
+background-image: linear-gradient(#000000b5,#0000002e),url(https://www.medecomedicalequip.com/data/upload/20171202/5a2213f9bd183.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center;
+padding: 150px 0;
+}
+.blog-text {
+    text-align: center;
+    width: 605px;
+    margin: auto;
+    padding-top: 64px;
+}
+
+.blog-text h2 {
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    position: relative;
+}
+
+.blog-text h2:before {content: '';width: 303px;height: 3px;background: crimson;display: block;position: absolute;bottom: -7px;left: 148px;}
+
+@media (max-width:768px) {
+    .blog-text h2:before {
+    width: 236px;
+        left: 76px;
+    }
+    .blog-text {
+      width: 100%;
+    }
+}
+

@@ -8,7 +8,7 @@ const allContext=UseFirebase()
 
 return(
     <AuthContext.Provider value={allContext}>
-               {children}
+             {children}
     </AuthContext.Provider>
 )
     

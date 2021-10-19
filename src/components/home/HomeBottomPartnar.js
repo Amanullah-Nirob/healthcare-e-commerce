@@ -4,7 +4,7 @@ const HomeBottomPartnar = () => {
     return (
         <div>
             <div className='home-bottom-part'>
-  <div className="containor ">
+  <div className="container ">
    <div className='home-Bottom-title'> <img src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/40/000000/external-win-friendship-wanicon-lineal-color-wanicon.png"/> <h5>our partnar <img src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/40/000000/external-win-friendship-wanicon-lineal-color-wanicon.png"/></h5></div>
 <div className="row home-bottom-all-content">
 

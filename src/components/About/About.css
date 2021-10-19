@@ -1,0 +1,119 @@
+.About-background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background-attachment: fixed;
+background-image: linear-gradient(#000000b5,#0000002e),url(https://media.istockphoto.com/photos/medical-team-doctor-handshake-hold-hand-shake-welcome-gesture-picture-id531713049);
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center;
+padding: 150px 0;
+}
+
+.about-discription-all-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-left-content{
+    flex-basis: 60%;
+}
+.about-right-content{
+    flex-basis: 40%;
+    padding: 0 40px;
+    color: #000;
+}
+.right-content-img{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.about-discription{
+    padding: 80px 0;
+}
+.education-title {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.PRINCIPAL-NAME {
+    margin-bottom: 35px;
+    margin-left: 15px;
+}
+
+.education {
+    margin-bottom: 32px
+}
+.education h3 {
+    color: #444;
+}
+.education p {
+    color: #333;
+
+}
+
+.catgory {
+    margin-bottom: 40px;
+}
+.catgory h6{
+    color: #000;
+}
+.Experience {
+    margin-bottom: 40px;
+}
+.Experience h3{
+    color: #000
+}
+.Experience p{
+    color: #333;
+}
+.right-content-discription {
+    padding: 0 16px;
+}
+
+.right-content-discription p {
+    text-align: justify;
+}
+.about-discription{
+   background-color: #fff
+}
+.PRINCIPAL-NAME h2 {
+    color: #000
+}
+.best-doctor img {
+    margin-top: 14px;
+}
+.PRINCIPAL-NAME h5 {
+    color: 000
+}
+.Skills h3{
+    color: #00000000
+}
+.Skills p{
+    color: crimson
+}
+.mb-4.row img {
+    margin-bottom: 20px;
+}
+.best-doctor {
+    margin-bottom: 20px;
+}
+@media (max-width:768px) {
+    .about-left-content{
+        flex-basis: 100%;
+        text-align: justify;
+    }
+    .about-right-content{
+        flex-basis: 100%;
+        margin-top: 40px;
+    }
+    .education-title {
+        text-align: center;
+        border-bottom: 3px solid gold;
+    }
+    .PRINCIPAL-NAME {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .text-white.row.gy-5.text-lg-start.text-md-start.text-start {
+        margin-left: 3px;
+    }
+}

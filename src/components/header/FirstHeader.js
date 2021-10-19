@@ -9,7 +9,7 @@ const FirstHeader = () => {
     return (
         <div>
             <div className='border'>
-<div className='containor first-header'>
+<div className='container first-header'>
     <div className='first-header-list'>
   <div className='sosial-link'>
   <a href="/home"><img alt='' src="https://img.icons8.com/fluency/17/000000/facebook-new.png"/></a>
@@ -24,10 +24,14 @@ const FirstHeader = () => {
     
             <a href="#">language  <FontAwesomeIcon icon={faSortDown} /></a>
             <a href="#">currency <FontAwesomeIcon icon={faSortDown} /></a>
-             {
-             user.email?<button onClick={logOutFunction}>log out</button>:
-            <Link to='/login'>login/ragister</Link>
-             }
+             
+           {  user.email?
+                 <button className='btn' onClick={logOutFunction}>log out</button>:
+             <Link to='/login'>login/ragister</Link> 
+          }
+           
+   
+             
        
        
     </div>

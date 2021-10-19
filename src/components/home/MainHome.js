@@ -6,7 +6,7 @@ const MainHome = () => {
     return (
         <div>
                 <div className='home'>
-                <div className="containor">
+                <div className="container">
                     <div className="home-all-content">
                         <div className='catagory'>
                           <div className='home-title'>
@@ -44,7 +44,7 @@ const MainHome = () => {
     </Carousel.Caption>
   </Carousel.Item>
   
-  <Carousel.Item style={{backgroundColor:'#f1dce5'}}>
+  <Carousel.Item className='carosal-item2'  style={{backgroundColor:'#f1dce5'}}>
     <img
       className="d-block w-100"
       src="https://i.ibb.co/MPvxkCj/211462-removebg-preview.png"

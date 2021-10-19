@@ -279,7 +279,13 @@ margin-bottom: 40px;
 .col-lg-3.col-md-4.col-6.main-singlemdicin {
     border: 1px solid #dddddda6;
 }
-
+.carosal-item1.active.carousel-item {
+    width: 103%;
+    margin-top: 2px;
+}
+.carosal-item2.active.carousel-item {
+    width: 101%;
+}
 
 @media (max-width:768px) {
     .home {
@@ -355,7 +361,7 @@ margin-bottom: 40px;
     }
     .singleServices {
         margin-top: 50px;
-        padding: 1px 26px;
+        padding: 1px 21px;
     }
     .row.doctorcard-area {
         padding: 11px;

@@ -11,14 +11,11 @@ const [error,setError]=useState('')
 const [email,setEmail]=useState('')
 const [password,setPassword]=useState('')
 const [name,setName]=useState('')
-const [isLoged,setIsLoged]=useState(false)
-
 const [isLoadding,setIsLoading]=useState(true)
-
 
 // emailfunction
 const emailfunction=(event)=>{
-    setEmail(event.target.value);
+    setEmail(event.target.value); 
 }
 
 // passwordFunction
@@ -31,40 +28,42 @@ const passwordFunction=(event)=>{
 // formSubmitFunction
 const formSubmitFunction=(event)=>{
     event.preventDefault()
-    isLoged?loginwithEmailPasswordFunction(email,password):
-    registationFunction(email,password)
-    updateNameFunction()
-    setUser(user)
-   
-}
-
-
-
-
-
-const loginwithEmailPasswordFunction=(email,password)=>{
-    signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      const user = userCredential.user;
-      console.log(user);
-    })
-}
-
-
-// registation function
-const registationFunction=(email,password)=>{
     createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       const user = userCredential.user;
       console.log(user);
-     
-    })
+      updateNameFunction()
+      
+
+    })    
     .catch((error) => {
       const errorMessage = error.message;
       setError(errorMessage)
     });
     setError('')
+
+
+
+   
 }
+
+const formSubmitFunction2=(event)=>{
+    event.preventDefault()
+  
+}
+
+const emailLoginfunction=()=>{
+ return signInWithEmailAndPassword(auth, email, password)
+ 
+    
+}
+
+
+
+
+
+
+
 
 
 
@@ -85,9 +84,6 @@ const updateNameFunction=()=>{
       setError('')
 }
 
-const checkBoxFunction=(event)=>{
-  setIsLoged(event.target.checked);
-}
 
 
 // googleLoginFunction
@@ -120,7 +116,7 @@ const logOutFunction=()=>{
 
 
 useEffect(()=>{
-  const unsubscribe=  onAuthStateChanged(auth, (user) => {
+  const unsubscribe= onAuthStateChanged(auth, (user) => {
         if (user) {
           setUser(user)
         }
@@ -129,7 +125,8 @@ useEffect(()=>{
         }
         setIsLoading(false)
       });
-      return unsubscribe
+      return ()=>unsubscribe
+       
 },[])
 
 
@@ -142,8 +139,9 @@ return{
     emailfunction,
     passwordFunction,
     updateName,
-    checkBoxFunction,
-    isLoged,
+    formSubmitFunction2,
+    
+    emailLoginfunction,
     isLoadding
 
 }

@@ -18,12 +18,18 @@
 }
 
 .containor{
-    width:1415px;
+    width:1400px;
     margin: auto;
 }
 
-
-
+.header-list2 a {
+    font-size: 14px;
+    color: grey;
+    margin: 0;
+}
+.sosial-link a {
+    margin-left: -10px;
+}
 .sosial-link a{
     text-decoration: none;
     color: rgba(128, 128, 128, 0.719);
@@ -48,6 +54,7 @@
     border-right: 0;
  padding-right: 0;
 }
+
 /* second-header */
 .second-header {
     padding-top: 30px;
@@ -156,7 +163,7 @@ button.second-header-btn {
    justify-content: flex-end;
 }
 .third-right-content img {
-    margin-top: 7px;
+    margin-top: 15px;
     margin-right: 16px;
 }
 .main-header-list a {
@@ -238,41 +245,75 @@ a.blog-nav:after {
 }
 .third-right-content-detiles{
     text-align: start;
+    padding: 0;
+    height: 50px;
+    margin-top: 10px;
 }
 .userName {
     margin-right: 17px;
-    margin-top: 12px;
+    margin-top: 20px;
     font-weight: 900;
    
 }
 .userName  p{
     color: #e01212
 }
+.third-right-content-detiles p {
+    margin-left: 13px;
+}
+.header-list2 a {
+    margin: 0;
+    font-size: 13px;
+}
 /* responsive */
 
 @media (max-width:768px) {
+    button.navbar-toggler.collapsed {
+        border: 1px solid crimson;
+    }
     .containor {
         width: 100%;
         margin: auto;
     }
     .first-header{
-        padding:0
+        padding:0;
+        width: 100%;
     }
     .first-header-list{
         flex-basis: 100%;
         text-align: center;
     }
-
+    .main-header-list a {
+       
+        margin-right: 0px;
+     
+     
+    }
+    .header-list2 a {
+        color: #666;
+    }
+ 
+    .sosial-link a {
+        margin-right: 10px;
+    }
     .header-list2{
         flex-basis: 100%;
         text-align: center;
+        width: 100%;
     }
     .sosial-link {
-        margin-left: 18px;
+        margin-left: 0px;
     }
     .header-list2 a {
         font-weight: 400;
         font-size: 15px;
+    }
+    .sosial-link a {
+        margin-right: 18px;
+    }
+    div#navbarScroll {
+        padding: 35px;
+        margin-top: 9px;
     }
 /* second start */
 .second-header {
@@ -294,6 +335,7 @@ padding: 0 20px;
     padding: 2px 10px;
     border-radius: 2px;
     font-size: 22px;
+    visibility: hidden;
 }
 .cards{
     display: block;
@@ -371,16 +413,11 @@ input.second-input {
     flex-basis: 100%;
 }
 .main-header-list a {
-    display: block;
-    width: 100%;
-    padding: 10px 19px;
-    margin-bottom: 4px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.342);
-    color: #4d4a4a;
-    font-size: 14px;
-    font-weight: 400;
+    color: #666;
+    margin-bottom: 8px;
 
 }
+
 .only-mobile-v{
     display: block;
 }
@@ -399,24 +436,57 @@ input.second-input {
 
 
 /* navbar end */
+/* .container.first-header {
+    display: none;
+} */
 
 
+nav.navbar.navbar-expand-lg.navbar-light {
+    position: absolute;
+    top: 81px;
+}
 
+a.blog-nav span {
+    right: 232px;
+    top: -3px;
+}
 
-
-
-
-
-
+a.blog-nav:after {
+    top: 12px;
+    right: 250px;
+    z-index: 1;
+}
+a.shop-nav span {
+    right: 238px;
+    top: -5px;
+ 
+}
+a.shop-nav:after {
+    top: 10px;
+    right: 253px;
+}
  .cart-icons{
     display: none;
    }
-   
+   .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    background: #000;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.sosial-link a {
+    margin-left: 6px;
+}
 
 
-
-
-
+.my-2.me-auto.my-lg-0.navbar-nav.navbar-nav-scroll a {
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 11px 0px;
+}
 
 }
 

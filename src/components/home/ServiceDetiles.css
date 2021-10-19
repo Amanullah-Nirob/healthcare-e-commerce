@@ -39,7 +39,12 @@ background-color: #fff
      left: 45%;
  }
 /* top background image end */
-
+.card-body a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fe7401b5;
+    padding: 11px 0;
+}
 
 
 .right-img1 img{

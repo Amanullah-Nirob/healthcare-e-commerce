@@ -4,7 +4,7 @@ const DoctorCart = (props) => {
   
     return (
 <div>
-<div className='containor'>
+<div className='container'>
         <div className="row doctorcard-area">
         <div className="col-lg-4 col-md-6 col-12">
   <div className='single-doctor1'>

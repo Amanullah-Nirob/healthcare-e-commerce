@@ -8,7 +8,7 @@ const Footer = () => {
   
   {/* <!-- footer top start --> */}
   <div className="footer-top">
-    <div className="containor">
+    <div className="container">
       <div className="text-white row gy-5 text-lg-start text-md-start text-start">
         <div className="col-lg-3 col-md-6 col-12">
           <div>
@@ -59,7 +59,7 @@ const Footer = () => {
   {/* <!-- footer top end -->
   <!-- footer bottom start --> */}
   <div className="footer-bottom">
-    <div className="containor d-flex align-items-center justify-content-between">
+    <div className="container d-flex align-items-center justify-content-between">
       <div>
         <p>© Copyright Arsha. All Rights ReservedDesigned by BootstrapMade</p>
       </div>

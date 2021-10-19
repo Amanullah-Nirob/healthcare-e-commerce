@@ -10,7 +10,7 @@
 .Appointment-section-all-content{
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 
@@ -58,10 +58,11 @@ display: inline-block;
 
 
 form {
-    background-color: #080808;
-    padding: 15px 26px 16px 25px;
+    background-color: #fff;
+    padding: 23px 17px 49px 25px;
     margin-left: 14px;
-   
+    border-top: 1px solid crimson;
+    border-bottom: 1px solid crimson;
 }
 
 .form-title {
@@ -74,10 +75,11 @@ form {
 }
 
 .form-title span{
-    background-color:rgba(51, 51, 51, 0.335);
-    color:#900412;
+    background-color:#f6000018;;
+    color:#ff0000;
     padding: 0px 6px;
     font-size: 20px;
+    margin-right: 2px;
 }
 
 
@@ -94,7 +96,7 @@ form {
 
 img.iconbaje {
     width: 32px;
-    border-radius: 14px;
+    border-radius: 18px;
     animation:spin 1s linear infinite;
 
 
@@ -117,8 +119,9 @@ form input {
     text-transform: none;
     /* margin-top: 8px; */
     border-radius: 4px;
-    background-color: #252525;
+    background-color: #fff;
     color: #6f6c6c;
+    border: 1px solid #ddd;
 }
 
 
@@ -133,9 +136,140 @@ input[type="checkbox"] {
     width: 16px;
 }
 label.check {
-    color: #fff;
+    color: #000;
     margin-left: 10px;
 }
+
+.single-item{
+    display: flex;
+   
+}
+.single-item i {
+    font-size: 42px;
+    margin-right: 13px;
+    color: #e01212;
+    margin-top: 10px;
+}
+.single-item h5 {
+    margin: 0;
+}
+.informations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.single-item.nember2 {
+    margin-right: 30px;
+}
+
+.informations.numbers-2 {
+    margin-top: 30px;
+}
+
+.moreInformations {
+    margin-top: 52px;
+}
+.checkbox {
+    margin-top: 10px;
+}
+button.mt-3.registerbtn {
+    border: 1px solid #e01212;
+    background: crimson;
+    color: #fff;
+    padding: 9px 35px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+}
+.loginwith {
+    text-align: center;
+    margin-top: 9px;
+    text-transform: capitalize;
+}
+button.btn.googlebtn {
+    display: block;
+    margin: auto;
+}
+.owner {
+    margin-top: 50px;
+}
+.owner p {
+    text-align: justify;
+}
+.owner h4 {
+    font-size: 29px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    position: relative;
+}
+
+.owner h4:before {content: '';width: 170px;height: 2px;display: block;background: crimson;position: absolute;bottom: -13px;}
+
+
+.wow.slideInLeft.left-content-img h2 {
+    position: relative;
+    margin-bottom: 21px;
+}
+
+h2 {}
+
+.wow.slideInLeft.left-content-img h2:before {content: '';width: 175px;height: 2px;background: crimson;display: block;position: absolute;bottom: -9px;}
+/* top background image start */
+.loginditile{
+    padding-top: 100px;
+
+}
+.login{
+    padding-top: 100px;
+    background-color: #000;
+ }
+ .articles{
+     background-image: linear-gradient(180deg, #00000096 0%, #000000ad 100%),url(https://www.mdd.gov.hk/filemanager/template/common/images/index-mdd-main-visual-bg.jpg);
+ background-size: cover;
+ background-position:center center;
+ background-attachment: fixed;
+ }
+ .loginditile-article-content-text{
+    padding: 130px 0px 120px 0px;
+    margin-top: -100px;
+    text-align: center;
+ }
+ .loginditile-article-content-text h1{
+     color: #fff;
+     font-size: 38px;
+     font-weight: 700;
+     position: relative;
+     margin-bottom: 50px;
+ }
+ .loginditile-article-content-text p{
+     color: #fff
+     
+ }
+ .loginditile-article-content-text h1:before {
+     position: absolute;
+     content: '';
+     width: 130px;
+     height: 3px;
+     background: orange;
+     bottom: -30px;
+     left: 45%;
+ }
+/* top background image end */
+
+.alert {
+    text-align: center;
+    text-transform: capitalize;
+    background: aliceblue;
+    padding: 14px;
+}
+
+.alert p {
+    padding: 0;
+    color: orange;
+}
+
+
 @media (max-width:768px) {
     
 /* Appointment start */
@@ -166,6 +300,32 @@ form {
     width: 100%;
 
 }
+.single-item {
+  display: block;
+    text-align: center;
+}
+.single-item.nember2 {
+    margin-right: 0px;
+}
+.moreInformations {
+    margin-bottom: 16px;
+}
+
+
+
+form {
+   
+    margin-left: 0px;
+   
+}
+
+
+
+
+
+
+
+
 
 }
 

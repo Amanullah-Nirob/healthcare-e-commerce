@@ -37,7 +37,7 @@ const [services,setServices]=useState([])
 <DoctorCart />
 
 <div className='bestsell-area'>
-<div className='containor'>
+<div className='container'>
 <h3> <span>Best Sell </span> Of The Month</h3>
   <div className="row">
   {
@@ -54,7 +54,7 @@ const [services,setServices]=useState([])
 
 <div className='servicess'>
   
-<div className='containor'>
+<div className='container'>
 <h3> <span>our best service </span> Of The Month</h3>
 <Row xs={1} md={4} className="g-4">
 {

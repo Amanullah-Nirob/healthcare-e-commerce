@@ -8,7 +8,7 @@ const SecondHeader = () => {
     return (
         <div>
             <div className='second-header'>
-    <div className="containor">
+    <div className="container">
         <div className='second-header-all-content'>
            {/* image */}
         <div className='header-image'> 
@@ -17,7 +17,7 @@ const SecondHeader = () => {
          <img className='headerimage' src="https://pro-16ed9.kxcdn.com/demo-51/wp-content/uploads/2020/10/logo.png" alt="" />
         </div> 
         <div className='cards'><img alt=''src="https://img.icons8.com/fluency/30/000000/favorite-cart.png"/>
-        <span>1</span>
+        <span>0</span>
         </div>
         </div>
             
