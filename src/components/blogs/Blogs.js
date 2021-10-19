@@ -16,7 +16,7 @@ useEffect(()=>{
         <div>
                <div className='blog-background'>
                     <div style={{textAlign:'center'}}>
-                     <h1 style={{color:'white'}}>About</h1>
+                     <h1 style={{color:'white'}}>Doctors</h1>
                     <NavLink to="/service"activeStyle={{fontWeight: "bold",color: "gold"}}><button className='btn'>back</button></NavLink>
                     </div>
                     </div>
