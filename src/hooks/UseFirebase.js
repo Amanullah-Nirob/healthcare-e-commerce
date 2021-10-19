@@ -13,19 +13,21 @@ const [password,setPassword]=useState('')
 const [name,setName]=useState('')
 const [isLoadding,setIsLoading]=useState(true)
 
+
+
 // emailfunction
 const emailfunction=(event)=>{
     setEmail(event.target.value); 
 }
+
 
 // passwordFunction
 const passwordFunction=(event)=>{
     setPassword(event.target.value);
 }
 
-
-
 // formSubmitFunction
+
 const formSubmitFunction=(event)=>{
     event.preventDefault()
     createUserWithEmailAndPassword(auth, email, password)
@@ -33,18 +35,12 @@ const formSubmitFunction=(event)=>{
       const user = userCredential.user;
       console.log(user);
       updateNameFunction()
-      
-
     })    
     .catch((error) => {
       const errorMessage = error.message;
       setError(errorMessage)
     });
     setError('')
-
-
-
-   
 }
 
 const formSubmitFunction2=(event)=>{
@@ -54,8 +50,6 @@ const formSubmitFunction2=(event)=>{
 
 const emailLoginfunction=()=>{
  return signInWithEmailAndPassword(auth, email, password)
- 
-    
 }
 
 

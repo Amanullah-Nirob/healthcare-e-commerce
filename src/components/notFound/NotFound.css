@@ -4,3 +4,15 @@
     background: #fff;
     text-align: center;
 }
+@media (max-width:768px) {
+    .notfound {
+        width: 100%;
+        height: 73vh;
+        background: #fff;
+        text-align: center;
+    }
+    .notfound img {
+        width: 100%;
+      
+    }
+}
