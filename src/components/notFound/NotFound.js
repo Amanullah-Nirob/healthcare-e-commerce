@@ -1,8 +1,8 @@
 import React from 'react';
-
+import './NotFound.css'
 const NotFound = () => {
     return (
-        <div>
+        <div className='notfound'>
             <img src="https://i1.wp.com/www.ecommerce-nation.com/wp-content/uploads/2018/10/404-error.jpg?fit=800%2C600&ssl=1" alt="" />
         </div>
     );
