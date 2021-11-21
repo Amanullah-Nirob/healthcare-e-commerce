@@ -38,6 +38,7 @@ const Header = () => {
 
 <span>Hot</span>
 </NavLink>
+
 <NavLink className='blog-nav' to="/blog"activeStyle={{fontWeight: "bold",color: "#e01212"}}>Doctor  <FontAwesomeIcon icon={faSortDown} /> <span>new</span></NavLink>
 <NavLink to="/about"activeStyle={{fontWeight: "bold",color: "#e01212"}}>About Us</NavLink>
 <NavLink to="/contact"activeStyle={{fontWeight: "bold",color: "#e01212"}}>Contact Us</NavLink>

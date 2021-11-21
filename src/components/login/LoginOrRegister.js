@@ -4,11 +4,7 @@ import UseAuth from '../../hooks/UseAuth';
 import './LoginOrRegister.css'
 const LoginOrRegister = () => {
   
- const {googleLoginFunction,formSubmitFunction,error,emailfunction,passwordFunction,updateName,
-
-user
- 
-}=UseAuth()
+ const {googleLoginFunction,formSubmitFunction,error,emailfunction,passwordFunction,updateName,user}=UseAuth()
 
 const location=useLocation()
 const history=useHistory()
@@ -19,6 +15,8 @@ const hendleGoolgeSingIn=()=>{
     history.push(reDireact_uri)
 })
 }
+
+
 
 
 
